@@ -1,1 +1,2 @@
 created new feature1
+added new line from new2-u1 branch for conflict
