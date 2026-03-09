@@ -1,1 +1,2 @@
 added feature2 by user2
+fixed feature2 through bugfix

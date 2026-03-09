@@ -1,1 +1,2 @@
 feature1 is created
+fixed feature1 through bugfix
