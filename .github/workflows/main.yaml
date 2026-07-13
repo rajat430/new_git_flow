@@ -9,6 +9,7 @@ jobs:
           file="fil1.txt"
           echo "file=$file" >> $GITHUB_ENV
           echo "filepath/$file"
+          python script.py --value "$file"
           
       - name: next_Task
         run: |
