@@ -6,13 +6,16 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v7.0.0
+      - name: directory
+        run: |
+          mkdir delta
       
       - name: param
         run: |
-          file="abcd fil1.txt"
+          file="abcd file1.txt"
           echo "file=$file" >> $GITHUB_ENV
-          echo "filepath/$file"
-          python main.py --value "$file"
+          echo "$file"
+          python main.py --value "delta/$file"
           
       - name: next_Task
         run: |
