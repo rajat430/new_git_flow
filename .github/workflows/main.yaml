@@ -1,0 +1,15 @@
+name: main
+on: push
+jobs:
+  jobA:
+    runs-on: ubuntu-latest
+    steps:
+      - name: param
+        run: |
+          file="fil1.txt"
+          echo "$file"
+          echo "file=$file" >> $GITHUB_ENV
+      - name: next_Task
+        run: |
+           echo "$file exist"
+  
