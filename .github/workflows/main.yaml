@@ -7,8 +7,9 @@ jobs:
       - name: param
         run: |
           file="fil1.txt"
-          echo "$file"
           echo "file=$file" >> $GITHUB_ENV
+          echo "$file"
+          
       - name: next_Task
         run: |
            echo "$file exist"
