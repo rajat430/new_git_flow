@@ -1,4 +1,5 @@
 import argparse
+import sys
 
 parser = argparse.ArgumentParser()
 
@@ -12,3 +13,4 @@ try:
     f.write("hello world")
 except Exception as error:
   print(f"there is some issue: {error}")
+  sys.exit(1)
