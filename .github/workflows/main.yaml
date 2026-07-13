@@ -12,7 +12,7 @@ jobs:
           file="fil1.txt"
           echo "file=$file" >> $GITHUB_ENV
           echo "filepath/$file"
-          python main.py --value "$file"
+          python main.py --value "/filepaht\ abcd/$file"
           
       - name: next_Task
         run: |
