@@ -15,7 +15,7 @@ jobs:
           file="abcd file1.txt"
           echo "file=$file" >> $GITHUB_ENV
           echo "$file"
-          python main.py --value "delta \folder/$file"
+          python main.py --value "delta folder/$file"
           
       - name: next_Task
         run: |
