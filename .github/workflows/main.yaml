@@ -9,7 +9,7 @@ jobs:
       
       - name: param
         run: |
-          file="fil1.txt"
+          file="abcd fil1.txt"
           echo "file=$file" >> $GITHUB_ENV
           echo "filepath/$file"
           python main.py --value "$file"
