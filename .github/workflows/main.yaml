@@ -8,14 +8,14 @@ jobs:
         uses: actions/checkout@v7.0.0
       - name: directory
         run: |
-          mkdir delta
+          mkdir "delta folder"
       
       - name: param
         run: |
           file="abcd file1.txt"
           echo "file=$file" >> $GITHUB_ENV
           echo "$file"
-          python main.py --value "delta/$file"
+          python main.py --value "delta \folder/$file"
           
       - name: next_Task
         run: |
