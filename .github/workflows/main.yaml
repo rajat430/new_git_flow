@@ -8,7 +8,7 @@ jobs:
         run: |
           file="fil1.txt"
           echo "file=$file" >> $GITHUB_ENV
-          echo "$file"
+          echo "filepath/$file"
           
       - name: next_Task
         run: |
