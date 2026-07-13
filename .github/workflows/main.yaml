@@ -4,6 +4,9 @@ jobs:
   jobA:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v7.0.0
+      
       - name: param
         run: |
           file="fil1.txt"
